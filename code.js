@@ -300,6 +300,18 @@ function restart() {
 
 function easterEgg() {
   update(locations[7]);
+}
+
+function pickTwo() {
+  pick(2);
+}
+
+function pickEight() {
+  pick(8);
+}
+
+function pick(guess) {
+  let numbers = [];
   while (numbers.length < 10) {
     numbers.push(Math.floor(Math.random() * 11));
   }
@@ -320,13 +332,3 @@ function easterEgg() {
     }
   }
 }
-
-function pickTwo() {
-  pick(2);
-}
-
-function pickEight() {
-  pick(8);
-}
-
-function pick(guess) {}
